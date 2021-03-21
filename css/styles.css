@@ -217,10 +217,6 @@ address {
   margin-right: auto;
 }
 
-.html {
-  box-sizing: border-box;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -236,17 +232,38 @@ p {
   margin: 0;
 }
 
-.menu {
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.page-header > .container {
   display: flex;
   align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  margin-left: auto;
 }
 
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigation {
+.wrap {
   display: flex;
+  margin-left: auto;
+}
+
+.wrap-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .logo-header {
@@ -261,7 +278,6 @@ p {
 
 .btn-link {
   display: inline-block;
-
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -285,9 +301,7 @@ p {
 }
 
 .card-set > .item {
-  width: 370px;
-  outline: 1px solid #f3f707;
-  flex-basis: calc ((100% - 90px) / 3);
+  width: calc ((100% - 60px) / 3);
   margin-right: var(--picture-gap);
 }
 
@@ -320,17 +334,14 @@ img {
 }
 
 .team {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin-right: calc(-1 * var(--picture-gap));
+  justify-content: center;
 }
 
 .team > .team-item {
-  width: 270px;
-  flex-basis: calc ((100% - 120px) / 4);
+  width: calc ((100% - 90px) / 4);
   margin-right: var(--picture-gap);
 }
 
@@ -346,7 +357,7 @@ img {
 .nav-portfolio {
   display: flex;
   justify-content: center;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .nav-portfolio-item:not(:last-child) {
@@ -358,21 +369,25 @@ img {
 }
 
 .picture {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin-right: calc(-1 * var(--picture-gap));
   margin-bottom: calc(-1 * var(--picture-gap));
+  margin-top: 50px;
 }
 
 .picture > .picture-item {
-  flex-basis: calc ((100% - 270) / 9);
+  width: 370px;
+  flex-basis: calc((100% - 90px) / 3);
   margin-right: var(--picture-gap);
   margin-bottom: var(--picture-gap);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .picture-content {
   padding: 20px 24px 54px;
+  background: var(--main-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
