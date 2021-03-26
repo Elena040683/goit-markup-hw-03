@@ -201,7 +201,6 @@ address {
 .hero {
   display: flex;
   text-align: center;
-  background-color: var(--accent-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -375,4 +374,32 @@ address {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+/* Многослойный фон в hero */
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--accent-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-icon {
+  padding: 0;
+  border: none;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--accent-light-color);
+  border-radius: 4px;
 }
