@@ -177,13 +177,16 @@ address {
   cursor: pointer;
   padding: 6px 22px 6px 22px;
   border-radius: 4px;
-  background-color: #f5f4fa;
+  border: transparent;
 }
 
 .btn:hover,
 .btn:focus {
   color: var(--main-color);
   background-color: var(--brand-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .container {
@@ -305,6 +308,7 @@ address {
 }
 
 .team-text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -402,4 +406,130 @@ address {
   margin-bottom: 30px;
   background: var(--accent-light-color);
   border-radius: 4px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-icons {
+  display: inline-flex;
+}
+
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  color: #afb1b8;
+}
+
+.social-icons-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-icons-item + .social-icons-item {
+  margin-left: 10px;
+}
+
+.social-icon-link:hover .icon,
+.social-icon-link:focus .icon {
+  fill: var(--main-color);
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: var(--brand-color);
+}
+
+.header-icon-link {
+  margin-right: 10px;
+  color: var(--accent-text-color);
+}
+
+.header-icon {
+  fill: currentColor;
+}
+
+/* Наши клиенты */
+
+.clients {
+  display: inline-flex;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.hov {
+  fill: currentColor;
+}
+
+.clients-item:hover .clients-link,
+.clients-item:focus .clients-link {
+  border: 1px solid var(--brand-color);
+  border-radius: 4px;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--brand-color);
+}
+
+.join-us {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.footer-social-icon-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--main-color);
+}
+
+.container-footer {
+  display: flex;
+}
+
+.footer-contacts-all {
+  display: inline-block;
+  flex-basis: calc((50%-45px) / 2);
+}
+
+.footer-social-link {
+  display: inline-block;
+  flex-basis: calc((50%-45px) / 2);
+}
+
+.picture-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
